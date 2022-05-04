@@ -11,7 +11,7 @@
     <meta name="description" content="Contacto">
     <meta name="keywords" content="skate, skateshop, e-sk8shop, Formulario">
 </head>
-<body class="cuerpo">
+<body>
             <!-- Nuevo menú de navegación -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
@@ -48,21 +48,53 @@
         <p class="parrafosimportantes">Bienvenidos al E-SK8Shop mas reconocido de la provincia!</p>
     </section>
     <!-- Inicio formulario -->
-    <form>
-        <label for="Nombre">Nombre</label>
-        <input type="text" name="Nombre"> 
-        <hr>
-        <label for="Mail">Mail</label>
-        <input type="text" name="Mail"> 
-        <p>Razon de la consulta?</p>
-        <textarea></textarea>
-        <hr>
-        <p style="position: absolute; color: black; background-color: white;">Soy humano</p>
-        <input type="checkbox" name="Acepta" value="1">
-        <p></p>
-        <input class="btn--enviar" type="submit" value="Enviar formulario">
-        <input class="btn--limpiar" type="reset" value="Limpiar formulario">
-    </form>
+    <div class="Form">
+        <div class="containerForm">
+            <div class="titulos">Contacto</div>
+            <form action="#">
+            <div class="form-columnas">
+                <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Nombre</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Apellido</label>
+                </div>
+            </div>
+            <div class="form-columnas">
+                <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">E-mail</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Razon de la consulta</label>
+                </div>
+            </div>
+            <div class="form-columnas">
+                <div class="input-data textarea">
+                    <textarea rows="8" cols="80" required></textarea>
+                    <br />
+                    <div class="underline"></div>
+                    <label for="">Escriba su mensaje</label>
+                    <br />
+                    <div class="form-columnas submit-btn" >
+                        <div class="input-data">
+                        <div class="inner"></div>
+                        <input type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- Fin nuevo formulario-->
             <!-- Inicio footer-->
             <div class="container">
                 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
