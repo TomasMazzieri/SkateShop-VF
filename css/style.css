@@ -32,36 +32,38 @@ h1 ,h2, h3 {
     background-color: #212529;
     color: white;
 }
-/*Inicio estilos de los divs*/
-/*
-div {
-    justify-content: center;
-    text-align: center;
-    background-color: brown;
-}
-*/
+
 
 /*galeria grid*/
-
-.galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+#GaleriaGrid .col-lg-4 {
+    margin: 0 !important;
+    padding: 5px;
 }
 
-.galeria-grid img {
-    width: 600px;
+#GaleriaGrid img {
+    width: 100%;
 }
 
-.galeria-grid img:nth-child(1){
-    grid-column: 3/3;
-    grid-row: 2/3;
+#GaleriaGrid img:hover {
+    border: 5px solid #212529;
 }
 
-.galeria-grid img:hover {
-    filter: sepia(1);
-    transform: scale(1.2);
+/*Estilos página nosotros*/
+
+#GaleriaGridNosotros .col-lg-2 {
+    margin: 0 !important;
+    padding: 5px;
 }
+
+#GaleriaGridNosotros img {
+    width: 100%;
+}
+
+#GaleriaGridNosotros img:hover {
+    color: #212529;
+    border: 5px solid #212529;
+}
+
 
 /*Estilos página formularios*/
 
@@ -214,7 +216,10 @@ form .form-columnas .textarea{
     }
 }
 
-
+hr {
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
 
 
